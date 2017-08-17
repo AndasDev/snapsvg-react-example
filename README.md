@@ -5,7 +5,7 @@ You need Adobe Animate.cc and SnapSVG extension to properly use this example.
 
 ## Installation
 
-Follow create-react-app[https://github.com/facebookincubator/create-react-app] guide to build this ReactApp project.
+[Follow create-react-app](https://github.com/facebookincubator/create-react-app) guide to build this ReactApp project.
 
 ## SVGAnimator example
 
