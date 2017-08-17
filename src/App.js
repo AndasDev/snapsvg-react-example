@@ -7,9 +7,9 @@ class App extends Component {
   render() {
     return (
       <div>
-      asdasdasdasdas
+      Some text before SVG
       <SVGAnimator/>
-      sdfsdfhsdhj
+      Some text after SVG
       </div>
     )
   }
