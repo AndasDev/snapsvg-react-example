@@ -1,15 +1,15 @@
 # Advanced animated SVG in ReactJS
 
 Proven concept for using exported SnapSVG and SVGAnimator(Adobe Animate.cc) in Reactprojects.
-To properly use this example you need Adobe Animate.cc installed.
+You need Adobe Animate.cc and SnapSVG extension to properly use this example.
 
 ## Installation
 
-Follow create-react-app guide to build this ReactApp project.
+Follow create-react-app[https://github.com/facebookincubator/create-react-app] guide to build this ReactApp project.
 
 ## SVGAnimator example
 
-SVGAnimator example is located in ./src/SVGAnimator.js
+SVGAnimator example is located in `./src/SVGAnimator.js`
 
 ## What's in it?
 
