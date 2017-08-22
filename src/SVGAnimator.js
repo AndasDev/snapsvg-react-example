@@ -13,36 +13,26 @@ import Snapsvg from 'snapsvg-cjs';
 /* eslint-enable */
 
 //snap.json is located in the public folder, dev-build folder(ugly approach).
-let jsonfile = "snap.json";
 
 class SVGAnimator extends Component {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      data: ''
-    }
-  }
   componentDidMount(){
-    axios.get(jsonfile)
+    axios.get(this.props.jsonfile)
       .then(response => {
-        this.setState({ data: response.data })
+        this.getSVG(response.data)
       });
   }
 
-  getSVG(){
-    if(this.state.data){
-      const container = document.getElementById('container');
-      const SVG = new window.SVGAnim(this.state.data, 269, 163, 24)
-      container.appendChild(SVG.s.node);
+  getSVG(svgData){
+    if(svgData){
+      const SVG = new window.SVGAnim(svgData, this.props.width, this.props.height, this.props.framerate)
+      this.svgContainer.appendChild(SVG.s.node);
     }
   }
 
   render() {
     return (
-      <div id="container">
-        { this.getSVG()}
-      </div>
+      <div ref={(container) => { this.svgContainer = container; }} />
     );
   }
 }
